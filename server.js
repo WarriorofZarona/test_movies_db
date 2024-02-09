@@ -14,7 +14,7 @@ const db = mysql.createConnection(
   {
     host: 'localhost',
     // MySQL username,
-    user: 'root',
+    user: process.env.DBUSER,
     // TODO: Add MySQL password here
     password: process.env.DBPASSWORD,
     database: 'movie_db',
